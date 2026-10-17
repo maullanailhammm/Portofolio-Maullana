@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Maullana Ilham Ar Rosyiid Mariandi — Software Engineer</title>
+    <meta
+      name="description"
+      content="Portofolio of Maullana Ilham Ar Rosyiid Mariandi"
+    />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@300;400;500;700&family=Mrs+Saint+Delafield&family=Playfair+Display:ital,wght@1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip" href="#content">Skip to content</a>
+    <div class="loader" id="loader" aria-label="Loading portofolio">
+      <div class="loader-inner">
+        <div class="loader-top">
+          <span>M. / portofolio</span>
+          <span>© <span id="loader-year"> </span> </span>
+        </div>
+        <div class="loader-mark">
+          WELCOME<span class="loader-to">TO</span>
+          <em>MY portofolio</em>
+        </div>
+        <div class="loader-meta">
+          <span id="loader-status">Initializing digital experience</span>
+          <span id="loader-index">01 — 04</span>
+        </div>
+        <span class="loader-percent" id="loader-percent">0%</span>
+        <div class="loader-line">
+          <i id="loader-bar"> </i>
+        </div>
+      </div>
+    </div>
+    <div class="grain"></div>
+    <div class="vignette"></div>
+    <canvas class="cosmic-canvas" id="cosmicCanvas"> </canvas>
+    <div class="progress" id="progress"></div>
+    <div class="cursor" id="cursor"></div>
+    <div class="toast" id="toast">Email copied</div>
+    <header class="top" id="top">
+      <div class="bar">
+        <a class="logo" href="index.html">M<b>.</b> </a>
+        <nav aria-label="Main">
+          <div class="links" id="links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="work.html">Works</a>
+            <a href="stack.html">Stack</a>
+            <a href="journey.html">Journey</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </nav>
+        <div class="status">
+          <span class="dot"> </span>
+          <span class="label">Open to opportunities</span>
+          <button
+            class="burger"
+            id="burger"
+            type="button"
+            aria-expanded="false"
+            aria-controls="links"
+          >
+            MENU
+          </button>
+        </div>
+      </div>
+    </header>
+    <main id="content">
+      <section class="sec" id="journey">
+        <div class="wrap">
+          <div class="head rv">
+            <span class="label">04 — Journey</span>
+            <span class="label">Building &amp; learning</span>
+          </div>
+          <h1 class="huge rv">
+            My<br />
+            <em>journey</em>
+          </h1>
+          <div class="journey" id="journeyList"></div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="wrap foot">
+        <span class="label"
+          >© <span id="year"> </span> Maullana Ilham Ar Rosyiid Mariandi</span
+        >
+        <nav aria-label="Footer">
+          <a class="label" href="about.html">About</a>
+          <a class="label" href="work.html">Works</a>
+          <a class="label" href="stack.html">Stack</a>
+          <a class="label" href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
