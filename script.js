@@ -211,7 +211,10 @@ const DATA = {
   /* photo fallback */
   var img = $('#photo img');
   function nophoto() { if ($('#photo')) $('#photo').classList.add('none') }
-  img.addEventListener('error', nophoto); if (img.complete && img.naturalWidth === 0) nophoto();
+  if (img) {
+    img.addEventListener('error', nophoto);
+    if (img.complete && img.naturalWidth === 0) nophoto();
+  }
   document.querySelectorAll('.shot img').forEach(function (i) { i.addEventListener('error', function () { i.style.display = 'none' }) });
 
   /* cinematic loader: simulated progress is capped until the hero is ready */
